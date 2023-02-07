@@ -10,6 +10,6 @@ app.get("/produtos", async function (req: Request, res: Response) {
   res.json(listaProdutos)
 })
 
-app.listen(3000);
+app.listen(3000, () => console.log("Server iniciado"));
 
 /* Link de teste => http://localhost:3000/produtos */
